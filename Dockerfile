@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # now set the working directory to /src
 # the purpose of this is to have paths in docker_test.py be relative to the /src directory
-WORKDIR /app/src
+WORKDIR src
 
 # run the python script. i used the full path here but the relative path will work too
-CMD [ "python", "/app/src/docker_test.py" ]
+CMD [ "python", "docker_test.py" ]
